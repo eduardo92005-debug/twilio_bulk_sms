@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Bulk Messages with Twilio{% endblock %}
+
+{% block content %}
+    <div class="uk-text-center">
+        <ul uk-tab>
+            <li class="tab-item uk-active uk-text-bold" uk-toggle="target: .tab-item; cls: uk-text-bold"><a href="#">Manual</a></li>
+            <li class="tab-item" uk-toggle="target: .tab-item; cls: uk-text-bold"><a href="#">Upload</a></li>
+        </ul>
+        <ul id="switcher-modes" class="uk-switcher">
+            <div id="switcher-manual">
+                {% include 'components/manual.html'%}
+            </div>
+            <div id="switcher-upload">
+               {% include 'components/upload.html'%}
+            </div>
+        </ul>
+    </div>
+{% endblock %}

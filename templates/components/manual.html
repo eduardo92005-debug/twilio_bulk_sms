@@ -1,0 +1,17 @@
+<h1>Adicione os numeros manualmente</h1>
+<form class="uk-form-stacked">
+    <div class="uk-margin">
+        <label class="uk-form-label" for="mensagem">Mensagem:</label>
+        <div class="uk-form-controls">
+            <textarea class="uk-textarea uk-form-primary" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+        </div>
+    </div>
+    <div class="uk-margin">
+        <label class="uk-form-label" for="numero">Número:</label>
+        <div class="uk-form-controls uk-inline">
+            <input class="uk-input" id="numero" type="text" placeholder="Digite o número de celular" data-parsley-required data-parsley-pattern="^\d{10}$" data-parsley-pattern-message="O número de celular deve ter exatamente 10 dígitos.">
+            <a class="uk-form-icon uk-form-icon-flip uk-text-success" href="#" uk-icon="check" onclick="adicionarNumero()"></a>
+        </div>
+    </div>
+    <button type="submit">Send messages</button>
+</form>

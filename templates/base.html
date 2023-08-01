@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Título da Página{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit/css/uikit.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.css">
+    <script src="{{ url_for('static', filename='uikit/js/uikit.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <script src="{{ url_for('static', filename='uikit/js/uikit-icons.min.js') }}"></script>
+</head>
+<body>
+    <div class="uk-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
